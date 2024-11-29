@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situations.Me</title>
+
+    <link rel="icon" href="assets/images/favicon.jpg">
+
+    <!--essential style library-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!--header section start-->
+        <header class="st_header_section">
+            <div class="container st_header_box">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-lg-4 col-7">
+                        <div class="st_header_logo">
+                            <a href="home.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-5">
+                        <div class="st_header_right d-flex g-40 align-items-center justify-content-end">
+                            <nav class="st_header_nav">
+                                <ul>
+                                    <li><a class="scroll" href="home.html#how_it_works">How it works</a></li>
+                                    <li><a class="scroll" href="home.html#how_different">How we're different</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                </ul>
+                            </nav>
+                            <div class="st_header_btns d-flex gap-3 align-items-center justify-content-end">
+                                <a target="_blank" href="index.html" class="template-btn primary-btn">Try our prototype</a>
+                                <button type="button" class="st_mobile_menu_toggle menu_btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header section end-->
+
+
+        <!-- Faq Start -->
+        <section class="faq-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="faq-wraper">
+                            <h3 class="mb-28">Frequently Asked <span class="st_circle_text">Questions<img src="assets/images/text-circle.png" alt="circle"></span></h3>
+                            <h4>Product concept</h4>
+                            <div class="accordion" id="">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What products do you offer?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Situation.Me is an AI-driven decision making assistance tool that allows users to learn what others have done in similar situations. Our goal is to help people make better life choices. We are doing this by giving people a better starting point to decide what to do - aggregated experiences of people like them.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What is Situation->Strategy->Actions->Results concept?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Situation->Strategy->Actions->Results concept is the general approach that we use to guide you through the analysis of your situation to present and review the recommendations.</p>
+                                        <ol>
+                                            <li>We start from your personal Situations and we may ask you a few additional questions to get additional information that is needed for creation of personalized recommendations.</li>
+                                            <li>At the next step we propose typical approaches to handle your Situation. Here we present you with Approaches that typically work well, and contrast them with frequent Approaches that tend to fail or be inefficient.</li>
+                                            <li>For each Approach we propose a series of possible Actions and list their possible Results.</li>
+                                        </ol>
+                                        <p>We found that this approach works best for handling complex life situations. Thoughtful implementation of this approach is a core of our product.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        For which situations this service works best?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Our main focus is on everyday situations that are experienced by married professionals with kids, and alike. We believe that these people are facing the largest number and variety of life problems and opportunities, and frequently do not have mentors or trusted advisors. However, one of the points to get your feedback is to identify other types of highly requested situations. Our suggestion - try your own personal situation and let us know about your experience. This feedback will allow us to build a better product!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFore" aria-expanded="false" aria-controls="collapseFore">
+                                        Are there any out-of-scope life situations?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFore" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Yes. Currently we do not support the situations relevant to religion, politics, and adult topics due to limited resources. The built-in AI policies automatically reject most entries related to hate speech, and other topics that appear illegal or dangerous.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Are you using AI to generate recommendations?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Yes. We use the LLMs to generate a seed level of our recommendations. In the next version, these recommendations will be reviewed by our staff, and finally other users of our service.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Why should I trust these recommendations?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Current AI recommendations are not perfect, but in most instances they are substantially better than suggestions by a typical person that is not expert in a given area. This is possible because all advanced LLM models are trained on a massive amount of relevant literature, and resources such as Reddit, Quora, online forums, etc. and they accumulate enormous amounts of relevant information.</p>
+                                        <p>Still, it is your decision what to do with the information you are provided. Use your common sense to make decisions based on this information.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSiven" aria-expanded="false" aria-controls="collapseSiven">
+                                        How are you better than ChatGPT and other AI chatbots?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseSiven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Feel free to discuss your situation with ChatGPT, Claude or other AI chatbots. Very soon you understand that our specialized solution works better and allows you to get results faster.</p>
+                                        <ul>
+                                            <li>We use well tested and validated approaches to guide you through the analysis of your situations.</li>
+                                            <li>We spent a lot of time developing, testing and improving prompts, fixing problems, and optimizing AI models.</li>
+                                            <li>We verify all major situations to ensure the quality of recommendations</li>
+                                            <li>Your personal user profile is used for each situation and you do not need to provide the same details over and over.</li>
+                                            <li>You are alone with a chatbot, but on our platform you have the situations and solutions contributed by other users like you.</li>
+                                            <li>Note: the features mentioned above will be available in our first production release.</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <h4>Privacy and personal data</h4>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne">
+                                          Are my personal data (my profile, situations, choices) private?
+                                      </button>
+                                    </h2>
+                                    <div id="collapseOne2" class="accordion-collapse collapse" data-bs-parent="#accordionExample02">
+                                      <div class="accordion-body">
+                                          <p>Yes. Your data is available only to you and to our team to improve the product.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                          Are you selling user’s data to third parties, such as advertisers?
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionExample02">
+                                      <div class="accordion-body">
+                                          <p>No. We do not sell user data to any third party and will not do this in future. We prefer to get paid for a quality product that we provide, and not for selling our customers to advertisers.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                          Can I delete my profile, account, and activities?
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionExample02">
+                                      <div class="accordion-body">
+                                          <p>We use the anonymous usage of the prototype to improve our product concept and features. These anonymous data are kept in our records. Once the product is converted to a paid personalized mode, all users will have the option to delete all or partial data associated with their accounts.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <h4>Pricing and availability</h4>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                                          Is your service free?
+                                      </button>
+                                    </h2>
+                                    <div id="collapseOne3" class="accordion-collapse collapse" data-bs-parent="#accordionExample03">
+                                      <div class="accordion-body">
+                                          <p>Yes. Currently we allow you to use our prototype for free in exchange for your feedback and testaments.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                                          Are you planning to charge a subscription for it?
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo3" class="accordion-collapse collapse" data-bs-parent="#accordionExample03">
+                                      <div class="accordion-body">
+                                          <p>Once we are confident that our product provides customers a substantial value over alternatives, and people love to use it, we will offer a fair monthly subscription for our products</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo455" aria-expanded="false" aria-controls="collapseTwo3">
+                                        When are you planning to launch your service?
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo455" class="accordion-collapse collapse" data-bs-parent="#accordionExample03">
+                                      <div class="accordion-body">
+                                          <p>We plan to launch the first version of our product in the first part of 2025.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Faq END -->
+
+         <!--Contact Section Start-->
+         <section class="hero_cta_sec_two mt--500">
+            <div class="container">
+                <div class="hero_cta_sec_inner wow animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="contact-form">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="get-form">
+                                    <h2>Have a Question? Ask Us Below!</h2>
+                                    <form action="#" method="post" class="contactForm" id="contact_form">
+                                        <input type="text" name="conName" placeholder="Your Name" class="required reqError">
+                                        <input type="email" name="conEmail" placeholder="Your Email" class="required reqError">
+                                        <textarea name="conQues" id="" placeholder="Your Questions" class="required reqError"></textarea>
+                                        <button type="submit">Submit</button>
+                                        <div class="alert con_message mt-4"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact Section END -->
+
+        <!--footer section start-->
+        <footer class="st_footer_section overflow-hidden position-relative">
+            <div class="container-fluid p-0">
+                <div class="st_footer_content">
+                    <h2 class="mb-3">We always want to hear <br> from you!</h2>
+                    <p>Feel free to send us a message, share your <br> thoughts, report a bug or propose a feature.</p>
+                    <hr class="st_line_seperator">
+                </div>
+                <div class="st_footer_bottom d-flex">
+                    <div class="st_footer_copyright">
+                        <p class="mb-0">Copyright (©) 2024 by Situations, Inc.</p>
+                    </div>
+                    <div class="st_footer_widget">
+                        <a href="home.html"><img src="assets/images/footer-logo.png" alt="logo" class="st_footer_logo"></a>
+                        <ul class="st_footer_nav">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="st_footer_contact">
+                        <p>Contact us:</p>
+                        <a href="mailto:contact@situations.me">contact@situations.me</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer section end-->
+
+    </main>
+
+    <!-- Mobile Header  Start-->
+    <section class="popup_menubar_sec">
+        <div class="popup_menubar_overlay"></div>
+        <div class="pop_menubar_background">
+            <div class="popMenubarArea">
+                <div class="popMenu_top">
+                    <div class="menu_pop_logo">
+                        <a href="home.html">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" id="popup_nav_Closer"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="dfNav_popupWrapper">
+                    <nav class="menubar_popup">
+                        <ul class="main_mobile_menu d-flex align-items-center">
+                            <li><a class="scroll" href="home.html#how_it_works">How it works</a></li>
+                            <li><a class="scroll" href="home.html#how_different">How we're different</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Header END -->
+
+    <a id="scroll_top" class="scroll-top" style="display: block; transform: scale(1);"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+    <!--essentail scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

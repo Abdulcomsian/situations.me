@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situations.Me</title>
+
+    <link rel="icon" href="assets/images/favicon.jpg">
+
+    <!--essential style library-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+</head>
+
+<body>
+    <main>
+        <!--header section start-->
+        <header class="st_header_section">
+            <div class="container st_header_box">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-lg-4 col-7">
+                        <div class="st_header_logo">
+                            <a href="home.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-5">
+                        <div class="st_header_right d-flex g-40 align-items-center justify-content-end">
+                            <nav class="st_header_nav">
+                                <ul>
+                                    <li><a class="scroll" href="home.html#how_it_works">How it works</a></li>
+                                    <li><a class="scroll" href="home.html#how_different">How we're different</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                </ul>
+                            </nav>
+                            <div class="st_header_btns d-flex gap-3 align-items-center justify-content-end d-lg-none">
+                                <button type="button" class="st_mobile_menu_toggle menu_btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header section end-->
+
+        <!-- Funnel works Start  -->
+        <section class="funnel_works_sec">
+            <div class="container">
+                <div class="row">
+                    <form id="chatForm">
+                        <div class="col-md-12">
+                            <h3 class="text-center">Try our core functionality and get a taste of what we plan to offer
+                                you soon!</h3>
+                            <!-- Progress bar -->
+                            <div class="progressbar">
+                                <div class="progress" id="progress"></div>
+                                <div class="progress_step progress_step_active" data-title="Describe your Situation">
+                                </div>
+                                <div class="progress_step" data-title="Additional Information"></div>
+                                <div class="progress_step" data-title="Strategies & Actions"></div>
+                                <div class="progress_step" data-title="Products and Services"></div>
+                                <div class="progress_step" data-title="Share your Feedback!"></div>
+                            </div>
+
+                            <!-- Steps 1-->
+                            <div class="form_step form_step_active">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="form_step_thumb text-center">
+                                            <img src="assets/images/form/step-2.png" alt="Your Situation"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form_step_content">
+                                            <h2>Your Situation</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>Please describe a life situation that you want to evaluate.</li>
+                                                    <li>Short facts are more useful than lengthy emotional texts.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form_step_field mn-height-420">
+                                            <div class="input-group">
+                                                <label class="form-label link" for="your-ituation"><a
+                                                        href="#modal_step_2" data-bs-toggle="modal">See
+                                                        examples</a></label>
+                                                <textarea name="the-user_input" id="userInput" maxlength="500"
+                                                    placeholder="Describe your situation..." autofocus></textarea>
+                                            </div>
+                                            <div class="text-end w-100">
+                                                <button class="template-btn primary-btn ml-auto text-white"
+                                                    type="submit" data-id="1">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 2-->
+                            <div class="form_step">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="form_step_thumb text-center">
+                                            <img src="assets/images/form/step-3.png" alt="Your Situation"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form_step_content">
+                                            <h2>Additional Information</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>Please answer the questions below to provide us with additional
+                                                        information.</li>
+                                                    <li>Feel free to skip less important or invasive questions </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form_step_field question_field">
+                                            <div class="input-group">
+                                                <label for="queston-1" id="queston-1">Question 1</label>
+                                                <input type="text" name="answer-1" placeholder="Your answer here..."
+                                                    style="color: black;">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-2" id="queston-2">Question 2</label>
+                                                <input type="text" name="answer-2" placeholder="Your answer here..."
+                                                    style="color: black;">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-3" id="queston-3">Question 3</label>
+                                                <input type="text" name="answer-3" placeholder="Your answer here..."
+                                                    style="color: black;">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-4" id="queston-4">Question 4</label>
+                                                <input type="text" name="answer-4" placeholder="Your answer here..."
+                                                    style="color: black;">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-5" id="queston-5">Question 5</label>
+                                                <input type="text" name="answer-5" placeholder="Your answer here..."
+                                                    style="color: black;">
+                                            </div>
+                                            <div class="text-end w-100">
+                                                <button class="template-btn primary-btn ml-auto text-white"
+                                                    type="submit" data-id="2">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 3-->
+                            <div class="form_step solution_step">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-12">
+                                        <div class="form_step_content">
+                                            <h2 class="title_with_arrow">Strategies <i
+                                                    class="fa-solid fa-arrow-right-long"></i> Actions <i
+                                                    class="fa-solid fa-arrow-right-long"></i> Results</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>Review the proposed Strategies to handle this Situation</li>
+                                                    <li>Explore possible Actions and their Results</li>
+                                                    <li>Select Strategies that you want to explore to see suggested
+                                                        products and services.</li>
+                                                </ul>
+                                            </div>
+                                            <h3>Recommended Strategies</h3>
+                                            <div class="accordion_wrapper mb-5">
+                                                <div id="recommended-strategies"></div>
+                                            </div>
+                                            <h3>Frequently failing Strategies</h3>
+                                            <div class="accordion_wrapper">
+                                                <div id="failing-strategies"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="text-end w-100">
+                                            <button class="template-btn primary-btn ml-auto text-white" type="submit"
+                                                data-id="3">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 4-->
+                            <div class="form_step rlt_pd_service">
+                                <div class="col-md-12 pt-4 mt-2">
+                                    <div class="form_step_content form_step_related_service">
+                                        <h2>Relevant Products and Services:</h2>
+                                        <div class="step_info">
+                                            <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                            <ul>
+                                                <li>Review the proposed Strategies to handle this Situation</li>
+                                                <li>Explore possible Actions and their Results</li>
+                                            </ul>
+                                        </div>
+                                        <div class="related_service_product pt-2">
+                                            <h3>Products</h3>
+                                            <div id="productsContainer" class="accordion_wrapper">
+                                                <!-- Products will be dynamically injected here -->
+                                            </div>
+                                            <h3 class="mt-5">Services</h3>
+                                            <div id="servicesContainer" class="accordion_wrapper">
+                                                <!-- Services will be dynamically injected here -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="text-end w-100">
+                                        <a href="#"
+                                            class="btn btn_next template-btn primary-btn ml-auto text-white">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 5-->
+                            <div class="form_step feeback_step">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-5 d-none d-md-block">
+                                        <div class="form_step_thumb text-center">
+                                            <img src="assets/images/form/step-5.png" alt="Your Situation"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form_step_content">
+                                            <h2>We want to know what you think about our demo!</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>We will improve our design and user experience based on your
+                                                        feedback.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form_step_field feedback_switch">
+                                            <div class="input-group">
+                                                <h4>Did you find our recommendations useful?</h4>
+                                                <div class="input_radio_field">
+                                                    <p>
+                                                        <input type="radio" id="nUseful" name="recommendations_usefull"
+                                                            value="no">
+                                                        <label for="nUseful">No</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="radio" id="yUseful" name="recommendations_usefull"
+                                                            value="yes">
+                                                        <label for="yUseful">Yes</label>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <h4>Did you learn anything new regarding your situation?</h4>
+                                                <div class="input_radio_field">
+                                                    <p>
+                                                        <input type="radio" id="nSituation" name="learned_anything_new"
+                                                            value="no">
+                                                        <label for="nSituation">No</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="radio" id="ySituation" name="learned_anything_new"
+                                                            value="yes">
+                                                        <label for="ySituation">Yes</label>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <h4>Are recommended products and services relevant?</h4>
+                                                <div class="input_radio_field">
+                                                    <p>
+                                                        <input type="radio" id="nRelevant"
+                                                            name="products_and_services_relevant" value="no">
+                                                        <label for="nRelevant">No</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="radio" id="yRelevant"
+                                                            name="products_and_services_relevant" value="yes">
+                                                        <label for="yRelevant">Yes</label>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <h4>Suggest one thing you want to improve in our product. We will do
+                                                    this for you!</h4>
+                                                <div class="input-group">
+                                                    <textarea name="your_suggestion" id="step_message" maxlength="500"
+                                                        placeholder="Share your thoughts here..." autofocus></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <h4>Add your email to get notified about our full featured product
+                                                    launch:</h4>
+                                                <div class="input-group">
+                                                    <input type="email" name="your-email" id="y-email"
+                                                        placeholder="Your email..">
+                                                </div>
+                                            </div>
+                                            <div class="text-end w-100">
+                                                <a href="#" class="btn btn_next template-btn primary-btn ml-auto text-white">Submit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 6-->
+                            <div class="form_step final_submition mx-auto">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-12 pt-3">
+                                        <div class="form_step_thumb">
+                                            <img src="assets/images/form/step-6.png" alt="Your Situation"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="form_step_content">
+                                            <h2>Thanks for your feedback!</h2>
+                                            <a href="index.html" class="btn text-white template-btn primary-btn">Explore
+                                                Another Situation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Steps  -->
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Funnel works End  -->
+
+        <!-- Modal for step 1-->
+        <div class="modal fade step_modal" id="modal_step_1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>How other users describe themselves:</h3>
+                        <ul>
+                            <li>28-year-old software engineer, avid rock climber, and dog owner living in Seattle.</li>
+                            <li>College student majoring in biology, part-time barista, and amateur photographer. I live
+                                in the midwest.</li>
+                            <li>Stay-at-home parent of twins, former accountant, passionate about gardening and cooking.
+                            </li>
+                            <li>Retired military veteran, current small business owner, and classic car enthusiast.</li>
+                            <li>Coding monkey by day, rock-scaling junkie by night. Barking roommate in tow. The Sierra
+                                mountains are my backyard.</li>
+                            <li>High school teacher specializing in physics, weekend gamer, and aspiring novelist.</li>
+                            <li>Male, 28 yo, live in Boston. College dropout. Love dogs. Single. Not very happy with my
+                                life.</li>
+                            <li>32 yo single mom of a autistic child. Live in NYC with my parents. Fighting with life
+                                for my future happiness.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal for step 1 end-->
+
+        <!-- Modal for step 2-->
+        <div class="modal fade step_modal" id="modal_step_2">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Situations that other users want to explore:</h3>
+                        <ul>
+                            <li>I'm dating a person of different religion and race. My parents are furious about our
+                                relationship.</li>
+                            <li>I've been living paycheck-to-paycheck for many years. Need to change this somehow.</li>
+                            <li>I just found out my long-term partner has been hiding a massive gambling debt from me.
+                            </li>
+                            <li>My boss offered me a promotion, but it would require relocating to a city I hate.</li>
+                            <li>I'm considering dropping out of medical school to pursue my passion for art.</li>
+                            <li>My best friend confessed they're in love with me, but I don't feel the same way.</li>
+                            <li>I accidentally discovered that my child isn't biologically mine through a DNA test kit.
+                            </li>
+                            <li>I'm thinking about quitting my stable job to start a business, but I have no savings.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal for step 2 end-->
+        <!--footer section start-->
+        <footer class="st_footer_section overflow-hidden position-relative pt-90">
+            <div class="container-fluid p-0">
+                <div class="st_footer_content">
+                    <h2 class="mb-3">We always want to hear <br> from you!</h2>
+                    <p>Feel free to send us a message, share your <br> thoughts, report a bug or propose a feature.</p>
+                    <hr class="st_line_seperator">
+                </div>
+                <div class="st_footer_bottom d-flex">
+                    <div class="st_footer_copyright">
+                        <p class="mb-0">Copyright (©) 2024 by Situations, Inc.</p>
+                    </div>
+                    <div class="st_footer_widget">
+                        <a href="home.html"><img src="assets/images/footer-logo.png" alt="logo"
+                                class="st_footer_logo img-fluid"></a>
+                        <ul class="st_footer_nav">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="st_footer_contact">
+                        <p>Contact us:</p>
+                        <a href="mailto:contact@situations.me">contact@situations.me</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer section end-->
+    </main>
+
+    <!-- Mobile Header  Start-->
+    <section class="popup_menubar_sec">
+        <div class="popup_menubar_overlay"></div>
+        <div class="pop_menubar_background">
+            <div class="popMenubarArea">
+                <div class="popMenu_top">
+                    <div class="menu_pop_logo">
+                        <a href="home.html">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" id="popup_nav_Closer"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="dfNav_popupWrapper">
+                    <nav class="menubar_popup">
+                        <ul class="main_mobile_menu d-flex align-items-center">
+                            <li><a class="scroll" href="home.html#how_it_works">How it works</a></li>
+                            <li><a class="scroll" href="home.html#how_different">How we're different</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Header END -->
+    <img src="assets/images/loader.gif" id="loader"
+        style="display: block; margin: 0 auto; width: 100px; visibility: hidden;">
+
+    <a id="scroll_top" class="scroll-top" style="display: block; transform: scale(1);"><i
+            class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": true,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+        $(document).ready(function () {
+            $('button[data-id]').click(function (event) {
+                event.preventDefault();
+
+                var stepId = $(this).data('id');
+                if (stepId === 1) {
+                    var $button = $(this);
+                    $button.prop('disabled', true);
+
+                    var userInput = $('#userInput').val().trim();
+
+                    if (!userInput) {
+                        alert("Please describe your situation.");
+                        return;
+                    }
+
+                    $('#loader').css('visibility', 'visible');
+
+                    fetch('config/prompt.txt')
+                        .then(response => response.text())
+                        .then(data => {
+                            var prompt = data.replace('${userInput}', userInput);
+
+                            $.ajax({
+                                url: 'ajax/api-request.php',
+                                type: 'POST',
+                                data: { user_input: prompt },
+                                dataType: 'json',
+                                success: function (response) {
+                                    if (response && response.choices && response.choices.length > 0) {
+
+                                        var assistantResponse = response.choices[0].message.content;
+
+                                        var questions = assistantResponse.split("\n");
+
+                                        var cleanedQuestions = questions.map(function (question) {
+                                            return question.replace(/^\d+\.\s*/, '').trim();
+                                        });
+
+                                        if (cleanedQuestions.length >= 5) {
+                                            for (let i = 0; i < 5; i++) {
+                                                var label = document.getElementById('queston-' + (i + 1));
+                                                if (label && cleanedQuestions[i]) {
+                                                    label.textContent = cleanedQuestions[i];
+                                                }
+                                            }
+                                        } else {
+                                            console.error("Expected 5 questions but got:", cleanedQuestions.length);
+                                        }
+
+                                        const nextBtn = document.querySelector('.btn_next');
+                                        $('#loader').css('visibility', 'hidden');
+                                        if (nextBtn) {
+                                            nextBtn.click();
+                                        } else {
+                                            console.error('Next button not found!');
+                                        }
+                                    } else {
+                                        console.error("No valid response received from GPT.");
+                                    }
+                                },
+                                error: function (xhr, status, error) {
+                                    console.error("AJAX Error:", error);
+                                    $('#response').html('<p style="color: red;">An error occurred. Please try again.</p>');
+                                }
+                            });
+                        });
+                }
+                else if (stepId === 2) {
+                    $('#loader').css('visibility', 'visible');
+                    var $button = $(this);
+                    $button.prop('disabled', true);
+                    var originalButtonText = $button.text();
+
+                    var answers = [];
+                    var questionsText = [];
+
+                    for (var i = 1; i <= 5; i++) {
+                        var answer = $('input[name="answer-' + i + '"]').val().trim();
+                        var question = $('label#queston-' + i).text().trim();
+
+                        answers.push(answer);
+                        questionsText.push(question);
+                    }
+
+                    if (answers.some(answer => answer === '')) {
+                        alert("Please answer all the questions.");
+                        $button.text(originalButtonText);
+                        return;
+                    }
+
+                    var userInput = $('#userInput').val().trim();
+
+                    fetch('config/answer_prompt.txt')
+                        .then(response => response.text())
+                        .then(data => {
+                            var prompt = data;
+                            prompt = prompt.replace('${userInput}', userInput);
+                            for (var i = 0; i < 5; i++) {
+                                prompt = prompt.replace(`\${questionsText[${i}]}`, questionsText[i]);
+                                prompt = prompt.replace(`\${answers[${i}]}`, answers[i]);
+                            }
+
+                            $.ajax({
+                                url: 'ajax/api-request.php',
+                                type: 'POST',
+                                data: { user_input: prompt },
+                                dataType: 'json',
+                                success: function (response) {
+                                    if (response && response.choices && response.choices.length > 0) {
+                                        var assistantResponse = response.choices[0].message.content;
+
+                                        try {
+                                            if (assistantResponse && assistantResponse.trim().length > 0) {
+                                                try {
+                                                    var strategies = JSON.parse(assistantResponse);
+
+                                                    if (strategies && strategies.strategies && strategies.strategies.length > 0) {
+                                                        const setInnerHTML = (id, content) => {
+                                                            const element = document.getElementById(id);
+                                                            if (element) {
+                                                                element.innerHTML = content;
+                                                            }
+                                                        };
+
+                                                        strategies.strategies.forEach((strategy, strategyIndex) => {
+                                                            let strategyHTML = `
+                                                <div class="accordion_item">
+                                                    <p>
+                                                        <input type="checkbox" name="solution_result${strategyIndex}" id="solution_result${strategyIndex}">
+                                                        <label for="solution_result${strategyIndex}"></label>
+                                                    </p>
+                                                    <h2 class="accordion__title" id="strategy_${strategyIndex}">
+                                                        <span class="sub_heading">Strategy ${strategyIndex + 1}:</span>
+                                                        ${strategy[`strategy_${strategyIndex + 1}`]} <i class="fas fa-angle-down"></i>
+                                                    </h2>
+                                                    <div class="accordion__content">
+                                                        ${strategy.actions.map((action, actionIndex) => `
+                                                            <div class="accordion_item accordion--nested">
+                                                                <h4 class="accordion__title" id="strategy${strategyIndex}_action${actionIndex}">
+                                                                    <span class="sub_heading">Action ${actionIndex + 1}:</span>
+                                                                    ${action[`strategy${strategyIndex + 1}_action${actionIndex + 1}`]} <i class="fas fa-angle-down"></i>
+                                                                </h4>
+                                                                <div class="accordion__content">
+                                                                    <span class="sub_heading">Results:</span>
+                                                                    <ul class="result_list">
+                                                                        ${action.results.map((result, resultIndex) => `
+                                                                            <li id="strategy${strategyIndex}_action${actionIndex}_result${resultIndex}">
+                                                                                ${result}
+                                                                            </li>`).join('')}
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        `).join('')}
+                                                    </div>
+                                                </div>`;
+                                                            document.getElementById("recommended-strategies").innerHTML += strategyHTML;
+                                                        });
+
+                                                        document.getElementById("recommended-strategies").addEventListener('click', function (event) {
+                                                            if (event.target.classList.contains('accordion__title') || event.target.closest('.accordion__title')) {
+                                                                const title = event.target.closest('.accordion__title');
+                                                                const accordionItem = title.parentElement;
+
+                                                                accordionItem.classList.toggle('accordion--open');
+
+                                                                title.classList.toggle('show');
+
+                                                                const content = title.nextElementSibling;
+
+                                                                if (content.style.display === 'block') {
+                                                                    content.style.display = 'none';
+                                                                    content.style.maxHeight = null;
+                                                                } else {
+                                                                    content.style.display = 'block';
+                                                                }
+                                                            }
+                                                        });
+
+                                                        const selectedRecommendedStrategiesData = [];
+                                                        const selectedFailingStrategiesData = [];
+
+                                                        document.getElementById("recommended-strategies").addEventListener("change", function (event) {
+                                                            if (event.target.type === "checkbox") {
+                                                                selectedRecommendedStrategiesData.length = 0;
+
+                                                                document.querySelectorAll('#recommended-strategies input[type="checkbox"]:checked').forEach((checkbox) => {
+                                                                    const strategyIndex = parseInt(checkbox.id.replace("solution_result", ""), 10);
+                                                                    const strategy = strategies.strategies[strategyIndex];
+                                                                    if (strategy) {
+                                                                        selectedRecommendedStrategiesData.push({
+                                                                            strategyName: strategy[`strategy_${strategyIndex + 1}`],
+                                                                            actions: strategy.actions.map((action, actionIndex) => ({
+                                                                                actionName: action[`strategy${strategyIndex + 1}_action${actionIndex + 1}`],
+                                                                                results: action.results
+                                                                            }))
+                                                                        });
+                                                                    }
+                                                                });
+
+                                                                sessionStorage.setItem("selectedRecommendedStrategies", JSON.stringify(selectedRecommendedStrategiesData));
+                                                            }
+                                                        });
+
+                                                        if (
+                                                            strategies.frequently_failing_strategies &&
+                                                            strategies.frequently_failing_strategies.length > 0
+                                                        ) {
+                                                            const mainStrategiesLength = strategies.strategies.length;
+
+                                                            strategies.frequently_failing_strategies.forEach((failingStrategy, failingIndex) => {
+                                                                const failingStrategyKey = Object.keys(failingStrategy)[0];
+                                                                const adjustedStrategyIndex = mainStrategiesLength + failingIndex;
+
+                                                                let strategyHTML = `
+                                                            <div class="accordion_item">
+                                                                <p>
+                                                                    <input type="checkbox" name="solution_result_failing${adjustedStrategyIndex}" id="solution_result_failing${adjustedStrategyIndex}">
+                                                                    <label for="solution_result_failing${adjustedStrategyIndex}"></label>
+                                                                </p>
+                                                                <h2 class="accordion__title" id="strategy_failing_${adjustedStrategyIndex}">
+                                                                    <span class="sub_heading">Strategy ${adjustedStrategyIndex + 1}:</span>
+                                                                    ${failingStrategy[failingStrategyKey]} <i class="fas fa-angle-down"></i>
+                                                                </h2>
+                                                                <div class="accordion__content">
+                                                                    ${failingStrategy.actions.map((action, actionIndex) => {
+                                                                    const actionKey = Object.keys(action)[0];
+
+                                                                    return `
+                                                                            <div class="accordion_item accordion--nested">
+                                                                                <h4 class="accordion__title" id="strategy_failing${adjustedStrategyIndex}_action${actionIndex}">
+                                                                                    <span class="sub_heading">Action ${actionIndex + 1}:</span>
+                                                                                    ${action[actionKey]} <i class="fas fa-angle-down"></i>
+                                                                                </h4>
+                                                                                <div class="accordion__content">
+                                                                                    <span class="sub_heading">Results:</span>
+                                                                                    <ul class="result_list">
+                                                                                        ${action.results
+                                                                            .map(
+                                                                                (result, resultIndex) =>
+                                                                                    `<li id="strategy_failing${adjustedStrategyIndex}_action${actionIndex}_result${resultIndex}">
+                                                                                                ${result}
+                                                                                            </li>`
+                                                                            ).join("")}
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        `;
+                                                                }).join("")}
+                                                                </div>
+                                                            </div>
+                                                        `;
+
+                                                                document.getElementById("failing-strategies").innerHTML += strategyHTML;
+                                                            });
+
+                                                            document.getElementById("failing-strategies").addEventListener('click', function (event) {
+                                                                if (event.target.classList.contains('accordion__title') || event.target.closest('.accordion__title')) {
+                                                                    const title = event.target.closest('.accordion__title');
+                                                                    const accordionItem = title.parentElement;
+
+                                                                    accordionItem.classList.toggle('accordion--open');
+
+                                                                    title.classList.toggle('show');
+
+                                                                    const content = title.nextElementSibling;
+
+                                                                    if (content.style.display === 'block') {
+                                                                        content.style.display = 'none';
+                                                                        content.style.maxHeight = null;
+                                                                    } else {
+                                                                        content.style.display = 'block';
+                                                                    }
+                                                                }
+                                                            });
+
+                                                            document.getElementById("failing-strategies").addEventListener("change", function (event) {
+                                                                if (event.target.type === "checkbox") {
+                                                                    selectedFailingStrategiesData.length = 0;
+
+                                                                    document.querySelectorAll('#failing-strategies input[type="checkbox"]:checked').forEach((checkbox) => {
+                                                                        const strategyIndex = parseInt(checkbox.id.replace("solution_result_failing", ""), 10);
+
+                                                                        const totalRecommendedStrategies = strategies.strategies.length;
+                                                                        const totalStrategies = totalRecommendedStrategies + strategies.frequently_failing_strategies.length;
+
+                                                                        if (strategyIndex >= totalRecommendedStrategies && strategyIndex < totalStrategies) {
+                                                                            const failingStrategyIndex = strategyIndex - totalRecommendedStrategies;
+                                                                            const strategy = strategies.frequently_failing_strategies[failingStrategyIndex];
+
+                                                                            if (strategy) {
+                                                                                const strategyNameKey = Object.keys(strategy)[0];
+                                                                                selectedFailingStrategiesData.push({
+                                                                                    strategyName: strategy[strategyNameKey],
+                                                                                    actions: strategy.actions.map((action, actionIndex) => {
+                                                                                        const actionKey = Object.keys(action)[0];
+                                                                                        return {
+                                                                                            actionName: action[actionKey],
+                                                                                            results: action.results
+                                                                                        };
+                                                                                    })
+                                                                                });
+                                                                            }
+                                                                        }
+                                                                    });
+
+                                                                    sessionStorage.setItem("selectedFailingStrategies", JSON.stringify(selectedFailingStrategiesData));
+                                                                }
+                                                            });
+
+                                                        }
+
+                                                        const nextBtn = document.querySelector('.btn_next');
+                                                        $('#loader').css('visibility', 'hidden');
+                                                        if (nextBtn) {
+                                                            nextBtn.click();
+                                                        } else {
+                                                            console.error('Next button not found!');
+                                                        }
+                                                    } else {
+                                                        toastr.error("The provided answers are not valid or clear. Please refine the input.");
+                                                        $('#loader').css('visibility', 'hidden');
+                                                        $button.prop('disabled', false);
+                                                        console.error("Invalid strategy data format:", assistantResponse);
+                                                    }
+
+                                                } catch (e) {
+                                                    toastr.error("The response from GPT could not be understood. Please try again.");
+                                                    $('#loader').css('visibility', 'hidden');
+                                                    $button.prop('disabled', false);
+                                                    console.error("Error parsing assistant response:", e);
+                                                }
+                                            } else {
+                                                toastr.error("Received an unclear or empty response from GPT. Please ask more detailed questions.");
+                                                $('#loader').css('visibility', 'hidden');
+                                                $button.prop('disabled', false);
+                                                console.error("Received empty or invalid response");
+                                            }
+                                        } catch (e) {
+                                            toastr.error("Unexpected error occurred. Please try again.");
+                                            $('#loader').css('visibility', 'hidden');
+                                            $button.prop('disabled', false);
+                                            console.error("Error parsing assistant response:", e);
+                                        }
+
+                                    } else {
+                                        toastr.error("No valid response received from GPT. Please try again.");
+                                        $('#loader').css('visibility', 'hidden');
+                                        $button.prop('disabled', false);
+                                        console.error("No valid response received from GPT.");
+                                    }
+                                },
+                                error: function (xhr, status, error) {
+                                    console.error("AJAX Error:", error);
+                                    $('#response').html('<p style="color: red;">An error occurred. Please try again.</p>');
+                                    $button.text(originalButtonText);
+                                }
+                            });
+                        });
+                }
+                else if (stepId === 3) {
+                    var $button = $(this);
+                    $button.prop('disabled', true);
+                    $('#loader').css('visibility', 'visible');
+
+                    fetch('config/products_prompt.txt')
+                        .then(response => response.text())
+                        .then(data => {
+                            var userSituation = $('#userInput').val().trim();
+                            const selectedRecommendedStrategies = JSON.parse(sessionStorage.getItem('selectedRecommendedStrategies'));
+                            const selectedFailingStrategies = JSON.parse(sessionStorage.getItem('selectedFailingStrategies'));
+                            
+                            if (!userSituation || !selectedRecommendedStrategies) {
+                                toastr.error("Please complete the previous steps first.");
+                                $button.prop('disabled', false);
+                                $('#loader').css('visibility', 'hidden');
+                                return;
+                            }
+
+                            const strategiesText = `Recommended Strategies: ${JSON.stringify(selectedRecommendedStrategies)}, 
+                            Failing Strategies: ${JSON.stringify(selectedFailingStrategies)}`;
+
+                            var prompt = data
+                                .replace('${userSituation}', userSituation)
+                                .replace('${strategiesText}', strategiesText);
+
+                            $.ajax({
+                                url: 'ajax/api-request.php',
+                                type: 'POST',
+                                data: { user_input: prompt },
+                                dataType: 'json',
+                                success: function (response) {
+                                    if (response && response.choices && response.choices.length > 0) {
+
+                                        const data = JSON.parse(response.choices[0].message.content);
+
+                                        $('#productsContainer').empty();
+                                        $('#servicesContainer').empty();
+
+                                        if (data.products) {
+                                            data.products.forEach((product, index) => {
+                                                const productName = Object.values(product)[0];
+                                                const categories = product.categories;
+
+                                                const productHTML = `
+                                                <div class="accordion_item">
+                                                    <h2 class="accordion__title" id="product-${index + 1}">
+                                                        ${productName || `Product ${index + 1}`}
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </h2>
+                                                    <div class="accordion__content ps-1">
+                                                        ${Object.values(categories).map(
+                                                    (category) => `<p>- ${category}</p>`
+                                                ).join('')}
+                                                    </div>
+                                                </div>
+                                            `;
+                                                $('#productsContainer').append(productHTML);
+                                            });
+                                            document.getElementById("productsContainer").addEventListener('click', function (event) {
+                                                if (event.target.classList.contains('accordion__title') || event.target.closest('.accordion__title')) {
+                                                    const title = event.target.closest('.accordion__title');
+                                                    const accordionItem = title.parentElement;
+                                                    const content = title.nextElementSibling;
+
+                                                    accordionItem.classList.toggle('accordion--open');
+
+                                                    title.classList.toggle('show');
+
+
+                                                    if (content.style.display === 'block') {
+                                                        content.style.display = 'none';
+                                                    } else {
+                                                        content.style.display = 'block';
+                                                    }
+                                                }
+                                            });
+                                        }
+
+                                        if (data.services) {
+                                            data.services.forEach((service, index) => {
+                                                const serviceName = Object.values(service)[0];
+                                                const categories = service.categories;
+
+                                                const serviceHTML = `
+                                                <div class="accordion_item">
+                                                    <h2 class="accordion__title" id="service-${index + 1}">
+                                                        ${serviceName || `Service ${index + 1}`}
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </h2>
+                                                    <div class="accordion__content ps-1">
+                                                        ${Object.values(categories).map(
+                                                    (category) => `<p>- ${category}</p>`
+                                                ).join('')}
+                                                    </div>
+                                                </div>
+                                            `;
+                                                $('#servicesContainer').append(serviceHTML);
+                                            });
+                                            document.getElementById("servicesContainer").addEventListener('click', function (event) {
+                                                if (event.target.classList.contains('accordion__title') || event.target.closest('.accordion__title')) {
+                                                    const title = event.target.closest('.accordion__title');
+                                                    const accordionItem = title.parentElement;
+                                                    const content = title.nextElementSibling;
+
+                                                    accordionItem.classList.toggle('accordion--open');
+
+                                                    title.classList.toggle('show');
+
+
+                                                    if (content.style.display === 'block') {
+                                                        content.style.display = 'none';
+                                                    } else {
+                                                        content.style.display = 'block';
+                                                    }
+                                                }
+                                            });
+                                        }
+
+                                        const nextBtn = document.querySelector('.btn_next');
+                                        $('#loader').css('visibility', 'hidden');
+                                        if (nextBtn) {
+                                            nextBtn.click();
+                                        } else {
+                                            console.error('Next button not found!');
+                                        }
+                                    } else {
+                                        console.error('No valid response received from GPT.');
+                                        $('#loader').css('visibility', 'hidden');
+                                        $button.prop('disabled', false);
+                                        alert('No valid response received. Please try again.');
+                                    }
+                                },
+                                error: function (xhr, status, error) {
+                                    $('#loader').css('visibility', 'hidden');
+                                    console.error('AJAX Error:', error);
+                                    alert('An error occurred while fetching the data.');
+                                },
+                            });
+                        })
+                }
+                else if (stepId === 4) {
+                    var $button = $(this);
+                    $button.prop('disabled', true);
+
+                    var data = {
+                        recommendations_useful: $("input[name='recommendations_usefull']:checked").val(),
+                        learned_anything_new: $("input[name='learned_anything_new']:checked").val(),
+                        products_and_services_relevant: $("input[name='products_and_services_relevant']:checked").val(),
+                        your_suggestion: $("#step_message").val().trim(),
+                        email: $("#y-email").val().trim(),
+                    };
+
+                    if (!data.email || !validateEmail(data.email)) {
+                        alert("Please provide a valid email address.");
+                        $button.prop('disabled', false);
+                        return;
+                    }
+
+                    if (!data.recommendations_useful || !data.learned_anything_new || !data.products_and_services_relevant) {
+                        alert("Please answer all the questions.");
+                        $button.prop('disabled', false);
+                        return;
+                    }
+
+                    $('#loader').css('visibility', 'visible');
+
+                    $.ajax({
+                        url: 'ajax/submit-feedback.php',
+                        method: 'POST',
+                        data: data,
+                        success: function (response) {
+                            console.log('response',response)
+                            toastr.success("Thank you for your feedback!");
+                            $('#loader').css('visibility', 'hidden'); 
+                            $button.prop('disabled', false);
+                            $('#chatForm')[0].reset();
+                        },
+                        error: function (xhr) {
+                            $('#loader').css('visibility', 'hidden'); 
+                            toastr.error("Something went wrong. Please try again.");
+                            $button.prop('disabled', false);
+                            $('#chatForm')[0].reset();
+                        },
+                    });
+                }
+
+                function validateEmail(email) {
+                    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return regex.test(email);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
