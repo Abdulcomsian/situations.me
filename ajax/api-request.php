@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$openAISecretKey = // key here;
+$openAISecretKey = // secret key here;
 
 $openAIEndpoint = 'https://api.openai.com/v1/chat/completions';
 
